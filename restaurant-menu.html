@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Steaks</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <ul class="menu-items">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#food-menu">Menu</a></li>
+          <li><a href="#order-form">Order Form</a></li>
+        </ul>
+        <h1 class="logo">🥩</h1>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-area" id="home">
+    <div class="hero-container container">
+      <h1 class="main-title">High Steaks</h1>
+      <br>
+      <p class="main-subtitle">The steaks have never been higher.</p>
+    </div>
+  </section>
+
+  <section id="food-menu">
+    <h2 class="food-menu-heading">Menu</h2>
+    <div class="food-menu-container container">
+      <article class="food-menu-item">
+        <div class="food-img"><img
+          src="https://images.media-allrecipes.com/userphotos/960x960/5456523.jpg"
+          alt="Grilled New York Strip Steak with a Side of Steak Fries"
+          class="menu-item-img"
+        /></div>
+        <div class="food-description">
+          <h3 class="food-title">
+            <div>New York Strip</div>
+            <div>$59</div>
+          </h3>
+          <p>USDA Prime, full bodied 16 oz cut, slightly firmer than a ribeye, served with a side of steak fries.</p>
+        </div>
+      </article>
+
+      <article class="food-menu-item">
+        <div class="food-img"><img
+          src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2010/8/11/0/TS-87566653_porterhouse-steak_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1400947936106.jpeg"
+          alt="Porterhouse Steak with a Side of Steak Fries"
+          class="menu-item-img"
+        /></div>
+        <div class="food-description">
+          <h3 class="food-title">
+            <div>Porterhouse</div>
+            <div>$116</div>
+          </h3>
+          <p>40 oz USDA Prime cut combining the rich flavor of a strip & the tenderness of a filet, served with a side of steak fries.</p>
+        </div>
+      </article>
+
+      <article class="food-menu-item">
+        <div class="food-img"><img
+          src="https://i.redd.it/ibi4sc1g4q851.jpg"
+          alt="Tomahawk Ribeye Steak with a side of Baked Potato"
+          class="menu-item-img"
+        /></div>
+        <div class="food-description">
+          <h3 class="food-title">
+            <div>Tomahawk Ribeye</div>
+            <div>$148</div>
+          </h3>
+          <p>USDA Prime, bone-in 40 oz ribeye, well-marbled for peak flavor, served with a side of baked potato.</p>
+        </div>
+      </article>
+    </div>
+
+  </section>
+  <section id="order-form">
+    <div class="order-container container">
+      <div class="form-container">
+        <h2>Place Your Order</h2>
+        <div style="display: flex;">
+          <input type="text" placeholder="Your Name"/>
+          <input type="email" placeholder="E-Mail" />
+        </div>
+        <br>
+        <div style="display: flex; flex-direction: column; max-width: 500px">
+          <div style="display: flex;">
+            <label style="width: 300px;">New York Strip</label>
+            <input style="width: 33px;" type = "number" min = "0" max = "99">
+          </div>
+          <div style="display: flex;">
+            <label style="width: 300px;">Porterhouse: </label>
+           <input style="width: 33px;" type = "number" min = "0" max = "99">
+          </div>
+          <div style="display: flex;">
+            <label style="width: 300px;">Tomahawk Ribeye: </label>
+            <input style="width: 33px;" type = "number" min = "0" max = "99">
+          </div>
+        </div>
+        <br>
+        <div>
+          <label>Special Requests: </label>
+          <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+        </div>
+        <br>
+        <input type ="submit" value = "Go To Checkout">
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>Made with love by <a href="https://www.codedex.io/@Dango">Dango</a></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>  
+  // Add smooth scrolling to all links
+    $(document).ready(function () {
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              600,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+  </script>
+</body>
+</html>

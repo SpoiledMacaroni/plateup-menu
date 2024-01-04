@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ///////////..utility classes../////////// */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* .btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+  font-size: 50%;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+} */
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  user-select: none;
+}
+
+/* ............//// Hero styling ////......... */
+
+.hero-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.1),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://img.freepik.com/free-photo/blank-logo-stamp-tag-template_53876-132286.jpg?w=1060&t=st=1704382576~exp=1704383176~hmac=cdbc3f03e5eb78cfc5c6896a35726f66e9229c195d02b5b3b25c824cedecc9bd");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+.main-subtitle {
+  font-size: 50%;
+}
+
+/* .........../Food Menu/............ */
+
+.food-menu-heading {
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.food-menu-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.food-menu-container img {
+  width: 100px;
+  height: 120px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+  border: 1px solid black;
+  transition: all .2s ease-in-out; 
+}
+
+.food-menu-container img:hover {
+  transform: scale(1.5); 
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.food-description {
+  flex-grow: 1;
+}
+
+.food-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.food-description p {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ........ Order Form........... */
+
+#order-form {
+  padding: 5rem 0;
+  background: rgb(226, 226, 226);
+}
+
+.order-container {
+  display: flex;
+  background: #fff;
+  width: fit-content;
+}
+
+.form-container {
+  padding: 1rem;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin: auto;
+}
+.form-container input {
+  display: block;
+  width: 100%;
+  border: 1px solid #44444438;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #44444438;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  padding: 1rem 0;
+  resize: none;
+}
+
+.form-container h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+}
+
+/* ........ Footer........... */
+#footer p {
+  text-align: center;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+#footer a:hover {
+  cursor: pointer; 
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
