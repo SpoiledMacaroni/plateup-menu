@@ -1,2 +1,2 @@
 # Restaurant Menu
-In this Final Project, I've created a page containing a full fledged menu for my fictional steak restaurant from popular indie game 'Plateup!'. This page includes a form for placing an order!
+In this Final Project, I've created a page containing a full fledged menu for my fictional steak restaurant, with an order form for placing your order at the bottom (Though it doesn't actually go anywhere!)
